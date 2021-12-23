@@ -1,8 +1,7 @@
 import java.util.ArrayList;
 
-public class CriptografiaCesariana implements Criptografia {
+public class CriptografiaCesariana {
 
-    @Override
     public String criptografar(String texto) {
     	if (texto == "") throw new IllegalArgumentException();
     
@@ -34,7 +33,6 @@ public class CriptografiaCesariana implements Criptografia {
         return encryptText;
     }
 
-    @Override
     public String descriptografar(String texto) {
         if (texto == "") throw new IllegalArgumentException();
     
